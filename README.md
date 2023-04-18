@@ -3,18 +3,19 @@
 # 部署步骤
 ## 1.fork本项目
     Dockerfile文件和render.yaml不需要修改任何东西
-## 2.注册vercel账号
-免费计划就可以，vercel是一个网站云托管平台，有免费计划可以用
-## 3.登录到dashboard
+## 2.注册Render账号
+免费计划就可以，Render是一个云托管平台，有免费计划可以用，但是Render免费服务如果不用或者处于非活跃状态无人请求可能会被停掉，
+建议使用uptime-kuma对地址进行保活，相关文章[Render部署uptime-kuma](https://blog.sxbai.com/archives/render-da-jian-uptime-kuma-jian-kong)
+## 3.进入dashboard（控制面板）
 ![image](https://user-images.githubusercontent.com/54519184/232719929-77d829b9-f485-4d2b-a82f-e7686f92382b.png)
 ## 4.新建一个Web Service
-![image](https://user-images.githubusercontent.com/54519184/232720445-3ed0c153-a59e-40d6-9e65-52313484537c.png)
+![image](https://user-images.githubusercontent.com/54519184/232752427-024217c5-040c-4d8e-b4a9-a4f1f2df2b64.png)
     连接自己的仓库或者使用公共仓库
-![image](https://user-images.githubusercontent.com/54519184/232720772-a4617bd7-8803-43b4-aa8d-e5b9539fbeeb.png)
-注意⚠️：这里可能需要vercel连接github账户获取项目，按照vercel提示连接就可以，尽量只授权你想连接的那个仓库，
-这里也可以直接选择下面的public git repository，使用本仓库的地址，后面vercel会帮助你自行fork本仓库，建立一个自己的仓库
+![image](https://user-images.githubusercontent.com/54519184/232752249-032f5be6-6281-4563-a5b0-d833a300767d.png)
+注意⚠️：这里可能需要Render连接github账户获取授权仓库列表，按照提示连接就可以，尽量只授权你想连接的那个仓库，
+这里也可以直接选择下面的public git repository，使用本仓库的地址，后面Render会帮助你自行fork本仓库，建立一个自己的仓库
 ## 5.配置部署信息
-![image](https://user-images.githubusercontent.com/54519184/232722476-711eb854-43b2-43f7-b642-667a9c02ed7e.png)
+![image](https://user-images.githubusercontent.com/54519184/232752718-b40eb74c-e185-4b26-874b-2975c0c85949.png)
 这里有几个选项
 - Name:服务名（自己想一个就行）
 - Region:部署节点区域，可选项（部署后你看哪个速度快用哪个）
@@ -36,9 +37,9 @@
 > 其他配置信息默认不用动,最后点击create new WebService就自动开始部署了
 ## 7.运行成功示例
 关闭VNC情况下
-![image](https://user-images.githubusercontent.com/54519184/232730067-894a691a-bbe7-4aaa-a0f1-06ee3a5895fc.png)
+![image](https://user-images.githubusercontent.com/54519184/232753178-d5a6013a-81d5-4661-91e8-96dd546a7e06.png)
 开启VNC情况下
-![image](https://user-images.githubusercontent.com/54519184/232730569-ae6c185c-d827-43ab-929b-406a31716168.png)
+![image](https://user-images.githubusercontent.com/54519184/232753621-ebf0ba06-298a-4c0a-8fd0-2e828ab5f586.png)
 ![image](https://user-images.githubusercontent.com/54519184/232730858-a59e2574-1c39-44c0-9bb4-6bda64fbc1e8.png)
 ⚠️ 关于API地址 ：vnc关闭时，render生成的域名就是API地址可以直接用，但是因为Render部署本身限制的情况下，vnc启动后会占用api的端口，导致云端API地址无法使用，请知悉
 这两种情况自己选择就行
