@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: halo
+  name: checkchan
   env: docker
   plan: free
   autoDeploy: true
