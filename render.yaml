@@ -3,4 +3,4 @@ services:
   name: halo
   env: docker
   plan: free
-  autoDeploy: false
+  autoDeploy: true
