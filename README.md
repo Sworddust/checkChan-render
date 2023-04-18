@@ -1,7 +1,7 @@
-# 本项目用于将check酱部署到vercel云托管平台
+# 本项目用于将check酱部署到Render云托管平台
 >check酱是一个监控网页状态的项目，具体介绍请移步[checkchan-dist](https://github.com/easychen/checkchan-dist)
 # 部署步骤
-## 1.fork本项目，
+## 1.fork本项目
     Dockerfile文件和render.yaml不需要修改任何东西
 ## 2.注册vercel账号
 免费计划就可以，vercel是一个网站云托管平台，有免费计划可以用
@@ -40,7 +40,7 @@
 开启VNC情况下
 ![image](https://user-images.githubusercontent.com/54519184/232730569-ae6c185c-d827-43ab-929b-406a31716168.png)
 ![image](https://user-images.githubusercontent.com/54519184/232730858-a59e2574-1c39-44c0-9bb4-6bda64fbc1e8.png)
-⚠️ 开启VNC情况下，因为vercel部署限制的情况下，vnc启动后会占用api的端口，导致无法在本地配置云端API地址
+⚠️ 关于API地址 ：vnc关闭时，render生成的域名就是API地址可以直接用，但是因为Render部署本身限制的情况下，vnc启动后会占用api的端口，导致云端API地址无法使用，请知悉
 这两种情况自己选择就行
 ## 8.设置里自定义自己的域名（可选）
 ![image](https://user-images.githubusercontent.com/54519184/232734253-c5971bcc-f78a-46c4-be99-80a6097c6458.png)
