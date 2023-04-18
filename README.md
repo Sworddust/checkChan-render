@@ -46,3 +46,5 @@
 ![image](https://user-images.githubusercontent.com/54519184/232734253-c5971bcc-f78a-46c4-be99-80a6097c6458.png)
 按照官方提示进行自定义就可以，使用自己域名的情况下，国内访问快一些
 
+# Deployment
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/select-repo?type=web)
